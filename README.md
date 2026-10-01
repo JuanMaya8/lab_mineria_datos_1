@@ -29,8 +29,6 @@ streamlit run app.py
 
 Se abre en el navegador (normalmente `http://localhost:8501`). En el menú lateral se elige el ejercicio, se escriben los valores y se pulsa **Predecir**.
 
-> El zip ya incluye los modelos y las gráficas generadas, así que se puede ir directo al Paso 2. El Paso 1 solo hace falta si se quiere volver a entrenar.
-
 **Opcional – usar un modelo sin interfaz:**
 
 ```bash
@@ -101,8 +99,3 @@ Cada archivo de `models/` es un diccionario con:
 | Energía | 429,52 | 20,72 | 0,8968 |
 
 El análisis completo está en el informe de Word.
-
-## 6. Notas
-
-- Si al cargar un `.joblib` aparece una advertencia de versión de scikit-learn, vuelva a ejecutar `python entrenamiento.py` para regenerarlos con la versión instalada.
-- Para agregar un ejercicio nuevo basta con añadir una entrada en `EJERCICIOS` (`config.py`) y un CSV en `data/`; el entrenamiento y la interfaz lo recogen sin más cambios.
