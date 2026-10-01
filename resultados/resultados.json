@@ -1,0 +1,440 @@
+{
+  "dolar": {
+    "nombre": "Precio del dólar",
+    "unidad": "COP",
+    "datos": {
+      "filas": 500,
+      "columnas": 4,
+      "nulos": 0,
+      "duplicados": 0,
+      "estadisticas": {
+        "Dia": {
+          "count": 500.0,
+          "mean": 250.5,
+          "std": 144.4818,
+          "min": 1.0,
+          "25%": 125.75,
+          "50%": 250.5,
+          "75%": 375.25,
+          "max": 500.0
+        },
+        "Inflacion": {
+          "count": 500.0,
+          "mean": 0.02,
+          "std": 0.0049,
+          "min": 0.0038,
+          "25%": 0.0165,
+          "50%": 0.0201,
+          "75%": 0.0232,
+          "max": 0.0393
+        },
+        "Tasa_interes": {
+          "count": 500.0,
+          "mean": 5.0159,
+          "std": 0.489,
+          "min": 3.6516,
+          "25%": 4.7024,
+          "50%": 5.0143,
+          "75%": 5.3256,
+          "max": 6.3162
+        },
+        "Precio_Dolar": {
+          "count": 500.0,
+          "mean": 5211.7719,
+          "std": 723.8952,
+          "min": 3940.3613,
+          "25%": 4604.885,
+          "50%": 5218.7911,
+          "75%": 5825.2353,
+          "max": 6553.5986
+        }
+      }
+    },
+    "n_entrenamiento": 400,
+    "n_prueba": 100,
+    "metricas_entrenamiento": {
+      "MSE": 2580.4620302623503,
+      "RMSE": 50.798248299152505,
+      "MAE": 40.468695560401564,
+      "R2": 0.9947566971157091
+    },
+    "metricas_prueba": {
+      "MSE": 2376.9708765724636,
+      "RMSE": 48.754188297750005,
+      "MAE": 37.00645389507639,
+      "R2": 0.996312811756911
+    },
+    "coeficientes": [
+      {
+        "variable": "Intercepto",
+        "coeficiente": 3985.7832908942432,
+        "error_estandar": 29.390905005143576,
+        "t": 135.61281254172707,
+        "p_valor": 0.0,
+        "beta_estandarizado": null
+      },
+      {
+        "variable": "Dia",
+        "coeficiente": 4.984338715884642,
+        "error_estandar": 0.018255497399306403,
+        "t": 273.0322054152311,
+        "p_valor": 0.0,
+        "beta_estandarizado": 0.9975678768755017
+      },
+      {
+        "variable": "Inflacion",
+        "coeficiente": -870.7317083114684,
+        "error_estandar": 521.8013184237351,
+        "t": -1.668703542071889,
+        "p_valor": 0.09596653401383093,
+        "beta_estandarizado": -0.006083410883003832
+      },
+      {
+        "variable": "Tasa_interes",
+        "coeficiente": -1.3774312878080708,
+        "error_estandar": 5.357913330915922,
+        "t": -0.2570835328485245,
+        "p_valor": 0.7972478128006424,
+        "beta_estandarizado": -0.0009405138896582028
+      }
+    ],
+    "correlaciones": {
+      "Dia": {
+        "Dia": 1.0,
+        "Inflacion": 0.0218,
+        "Tasa_interes": 0.076,
+        "Precio_Dolar": 0.9976
+      },
+      "Inflacion": {
+        "Dia": 0.0218,
+        "Inflacion": 1.0,
+        "Tasa_interes": -0.0757,
+        "Precio_Dolar": 0.0196
+      },
+      "Tasa_interes": {
+        "Dia": 0.076,
+        "Inflacion": -0.0757,
+        "Tasa_interes": 1.0,
+        "Precio_Dolar": 0.0743
+      },
+      "Precio_Dolar": {
+        "Dia": 0.9976,
+        "Inflacion": 0.0196,
+        "Tasa_interes": 0.0743,
+        "Precio_Dolar": 1.0
+      }
+    }
+  },
+  "glucosa": {
+    "nombre": "Nivel de glucosa en sangre",
+    "unidad": "mg/dL",
+    "datos": {
+      "filas": 2000,
+      "columnas": 4,
+      "nulos": 0,
+      "duplicados": 0,
+      "estadisticas": {
+        "Edad": {
+          "count": 2000.0,
+          "mean": 49.157,
+          "std": 17.5445,
+          "min": 20.0,
+          "25%": 34.0,
+          "50%": 50.0,
+          "75%": 64.0,
+          "max": 79.0
+        },
+        "IMC": {
+          "count": 2000.0,
+          "mean": 24.9633,
+          "std": 3.9836,
+          "min": 10.5867,
+          "25%": 22.3445,
+          "50%": 25.0287,
+          "75%": 27.7511,
+          "max": 39.4302
+        },
+        "Actividad_Fisica": {
+          "count": 2000.0,
+          "mean": 4.6645,
+          "std": 2.9122,
+          "min": 0.0,
+          "25%": 2.0,
+          "50%": 5.0,
+          "75%": 7.0,
+          "max": 9.0
+        },
+        "Nivel_Glucosa": {
+          "count": 2000.0,
+          "mean": 139.6301,
+          "std": 27.3429,
+          "min": 43.4159,
+          "25%": 119.0676,
+          "50%": 139.9673,
+          "75%": 159.2085,
+          "max": 227.5607
+        }
+      }
+    },
+    "n_entrenamiento": 1600,
+    "n_prueba": 400,
+    "metricas_entrenamiento": {
+      "MSE": 235.51368494080384,
+      "RMSE": 15.346455126210868,
+      "MAE": 12.109321980867112,
+      "R2": 0.6862121817902269
+    },
+    "metricas_prueba": {
+      "MSE": 233.6930004508584,
+      "RMSE": 15.287020653183484,
+      "MAE": 12.219782574464602,
+      "R2": 0.6813715865404839
+    },
+    "coeficientes": [
+      {
+        "variable": "Intercepto",
+        "coeficiente": 65.86086530452535,
+        "error_estandar": 2.700818462815152,
+        "t": 24.385520986063018,
+        "p_valor": 0.0,
+        "beta_estandarizado": null
+      },
+      {
+        "variable": "Edad",
+        "coeficiente": 1.2265900344995708,
+        "error_estandar": 0.02184894557880142,
+        "t": 56.13955282536149,
+        "p_valor": 0.0,
+        "beta_estandarizado": 0.7873655881000817
+      },
+      {
+        "variable": "IMC",
+        "coeficiente": 0.9333730560350998,
+        "error_estandar": 0.09633993358156215,
+        "t": 9.688329868370719,
+        "p_valor": 0.0,
+        "beta_estandarizado": 0.1358776513538698
+      },
+      {
+        "variable": "Actividad_Fisica",
+        "coeficiente": -2.0852763430432835,
+        "error_estandar": 0.13120879986920692,
+        "t": -15.892808600657524,
+        "p_valor": 0.0,
+        "beta_estandarizado": -0.22288223396670212
+      }
+    ],
+    "correlaciones": {
+      "Edad": {
+        "Edad": 1.0,
+        "IMC": 0.0156,
+        "Actividad_Fisica": 0.0178,
+        "Nivel_Glucosa": 0.7898
+      },
+      "IMC": {
+        "Edad": 0.0156,
+        "IMC": 1.0,
+        "Actividad_Fisica": 0.0128,
+        "Nivel_Glucosa": 0.1383
+      },
+      "Actividad_Fisica": {
+        "Edad": 0.0178,
+        "IMC": 0.0128,
+        "Actividad_Fisica": 1.0,
+        "Nivel_Glucosa": -0.1984
+      },
+      "Nivel_Glucosa": {
+        "Edad": 0.7898,
+        "IMC": 0.1383,
+        "Actividad_Fisica": -0.1984,
+        "Nivel_Glucosa": 1.0
+      }
+    }
+  },
+  "energia": {
+    "nombre": "Consumo de energía eléctrica",
+    "unidad": "kWh",
+    "datos": {
+      "filas": 10000,
+      "columnas": 4,
+      "nulos": 0,
+      "duplicados": 0,
+      "estadisticas": {
+        "Temperatura": {
+          "count": 10000.0,
+          "mean": 24.9248,
+          "std": 5.004,
+          "min": 5.388,
+          "25%": 21.5785,
+          "50%": 24.9005,
+          "75%": 28.311,
+          "max": 44.6312
+        },
+        "Hora": {
+          "count": 10000.0,
+          "mean": 12.4936,
+          "std": 6.9213,
+          "min": 1.0,
+          "25%": 6.0,
+          "50%": 12.0,
+          "75%": 18.0,
+          "max": 24.0
+        },
+        "Dia_Semana": {
+          "count": 10000.0,
+          "mean": 3.9994,
+          "std": 2.0,
+          "min": 1.0,
+          "25%": 2.0,
+          "50%": 4.0,
+          "75%": 6.0,
+          "max": 7.0
+        },
+        "Consumo_Energia": {
+          "count": 10000.0,
+          "mean": 400.0435,
+          "std": 63.8252,
+          "min": 185.1964,
+          "25%": 356.7353,
+          "50%": 399.2704,
+          "75%": 443.1341,
+          "max": 631.0932
+        }
+      }
+    },
+    "n_entrenamiento": 8000,
+    "n_prueba": 2000,
+    "metricas_entrenamiento": {
+      "MSE": 399.19365677891636,
+      "RMSE": 19.979831250011006,
+      "MAE": 15.91738594512081,
+      "R2": 0.9014539402878962
+    },
+    "metricas_prueba": {
+      "MSE": 429.51869176035575,
+      "RMSE": 20.724832731782318,
+      "MAE": 16.510114230844557,
+      "R2": 0.8968196536749335
+    },
+    "coeficientes": [
+      {
+        "variable": "Intercepto",
+        "coeficiente": 101.28823172887508,
+        "error_estandar": 1.2979470658949428,
+        "t": 78.03725929226258,
+        "p_valor": 0.0,
+        "beta_estandarizado": null
+      },
+      {
+        "variable": "Temperatura",
+        "coeficiente": 9.95286590779165,
+        "error_estandar": 0.04478814667879838,
+        "t": 222.22098134958318,
+        "p_valor": 0.0,
+        "beta_estandarizado": 0.7802901822787951
+      },
+      {
+        "variable": "Hora",
+        "coeficiente": 5.019813389575861,
+        "error_estandar": 0.032258127805888756,
+        "t": 155.613909765076,
+        "p_valor": 0.0,
+        "beta_estandarizado": 0.5464071944729574
+      },
+      {
+        "variable": "Dia_Semana",
+        "coeficiente": -3.0311766574336483,
+        "error_estandar": 0.11150934861619678,
+        "t": -27.18316172634667,
+        "p_valor": 0.0,
+        "beta_estandarizado": -0.09543221882395825
+      }
+    ],
+    "correlaciones": {
+      "Temperatura": {
+        "Temperatura": 1.0,
+        "Hora": -0.0186,
+        "Dia_Semana": -0.0069,
+        "Consumo_Energia": 0.7719
+      },
+      "Hora": {
+        "Temperatura": -0.0186,
+        "Hora": 1.0,
+        "Dia_Semana": -0.0001,
+        "Consumo_Energia": 0.529
+      },
+      "Dia_Semana": {
+        "Temperatura": -0.0069,
+        "Hora": -0.0001,
+        "Dia_Semana": 1.0,
+        "Consumo_Energia": -0.1022
+      },
+      "Consumo_Energia": {
+        "Temperatura": 0.7719,
+        "Hora": 0.529,
+        "Dia_Semana": -0.1022,
+        "Consumo_Energia": 1.0
+      }
+    }
+  },
+  "verificaciones": {
+    "dolar_cronologico": {
+      "descripcion": "Entrenamiento con los primeros 400 días, prueba con los últimos 100",
+      "metricas": {
+        "MSE": 2905.7132283732476,
+        "RMSE": 53.90466796459512,
+        "MAE": 43.72016761117392,
+        "R2": 0.8788301969124285
+      }
+    },
+    "energia_codificacion": {
+      "modelo_base": {
+        "R2": 0.8968196536749335,
+        "RMSE": 20.724832731782318
+      },
+      "dia_semana_como_categoria": {
+        "R2": 0.8966880581951138,
+        "RMSE": 20.738044672649853
+      },
+      "hora_ciclica_seno_coseno": {
+        "R2": 0.7851430644321611,
+        "RMSE": 29.906613084082082
+      },
+      "consumo_medio_por_dia": {
+        "1": 412.25,
+        "2": 404.17,
+        "3": 401.33,
+        "4": 401.67,
+        "5": 397.61,
+        "6": 392.29,
+        "7": 390.97
+      },
+      "consumo_medio_por_hora": {
+        "1": 347.95,
+        "2": 350.93,
+        "3": 354.57,
+        "4": 357.39,
+        "5": 362.73,
+        "6": 368.16,
+        "7": 370.84,
+        "8": 379.06,
+        "9": 385.4,
+        "10": 383.97,
+        "11": 389.71,
+        "12": 398.9,
+        "13": 401.7,
+        "14": 403.41,
+        "15": 409.94,
+        "16": 416.79,
+        "17": 423.24,
+        "18": 430.04,
+        "19": 430.01,
+        "20": 438.48,
+        "21": 443.66,
+        "22": 446.17,
+        "23": 449.71,
+        "24": 459.07
+      }
+    }
+  }
+}
